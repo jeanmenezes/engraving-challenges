@@ -12,7 +12,13 @@ A project has a main repository ("repo") stored on GitHub.  This is the public f
 
 This repo is what you will *read* from whenever you need to get the latest and greatest versions of the project files.  You will never probably write to this repo directly; only the project lead(s) will do this.
 
-When you first join a project, you start by visiting the main repo and pressing the `Fork` button to create your own copy of that repo.  This fork is *also* stored on GitHub.  You will then create a "clone" of your own fork by pressing the `Clone in Desktop` button while viewing your fork.  This copies your fork to your own machine.  The copy of the fork on GitHub is customarily called the "origin" repo, and the copy on your own machine might be referred to as the "local" repo.
+When you first join a project, you start by visiting the main repo and pressing the `Fork` button to create your own copy of that repo.  This fork is *also* stored on GitHub, and you will also have *write* access to this copy.
+You will then have to create a local "clone" of the repository where you can work with on your computer.
+If you have installed GitHub's GUI application for Windows or Mac you can do that by pressing the `Clone in Desktop` button while viewing your fork.  Otherwise you can do that with the `git clone` command. This copies your fork to your own machine.  
+
+Now you have a local repository and a `remote` repository. Cloning has automatically registered your fork on GitHub as a remote called `origin`. From this remote you can always `pull` or `fetch` data (i.e. download to your local repository) or `push` (i.e. upload to the remote repository).
+
+One more thing to note is that forking creates a *copy* of the original repo, but further changes on the original will *not* be visible on the fork by default.  In order to overcome this you will establish a connection to the 'official' repo by adding it as an additional remote, customarily called `upstream`. You will be able to download new work from there to update your local repo.
 
 ## Workflow Overview
 

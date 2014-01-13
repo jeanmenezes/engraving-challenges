@@ -37,6 +37,8 @@ folder.
 Each challenge is contained in an individual top-level directory, with
 some specific information in a README.md file that will be displayed automatically when you open that directory.
 
+**Important:** please contact us before starting any work, to ensure that everything will be set up correctly.
+
 Communication channels for this project are:
 
 - The openlilylib-user mailing list  
